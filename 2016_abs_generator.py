@@ -28,5 +28,5 @@ if __name__=="__main__":
 #input url need to analysis
 url = 'https://www.usenix.org/conference/usenixsecurity14/technical-sessions'
 abss = UrlFinder(url)
-print abss
+abss
 
