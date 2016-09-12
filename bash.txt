@@ -1,0 +1,43 @@
+
+code:
+
+touch file_name
+# create a file, different options to do that. 
+
+nano file_name
+# an editor to modify. Also could be used to view a file. 
+
+^
+# control keyboard.
+
+cd Desktop
+# goes to desktop address. change directry. relative path. assume the file is within the address. 
+
+cd / users
+# absulte file name. not related to current location. 
+
+cd -F
+# shows directry. wiht slash '/'.
+
+cat file_name
+# read different text file. 
+
+cat -n file_name
+# -n : n flag ,  with line number and good to do debugge. 
+
+less file_name
+# when dont have atro bar. takeover whole scream. using arrow keys to scroll back and forward.. left by push 'q' to quit.
+
+pwd
+#locate where you r now.
+
+ls
+# list all files within this address.
+
+
+Basic Commands to get around in BASH:
+bash is called by shell. 
+absult file name &  relative directry
+
+flag:
+hyphen: '-' 
