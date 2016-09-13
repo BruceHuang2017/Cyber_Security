@@ -11,8 +11,3 @@ for n in link:
   urls.append(url)
        # name.a['href'] means find the attribute a(link).
 techurl = [l for l in urls if "technical-sessions/presentation" in str(l)]
-
-def AbsFinder(item_url)
-  soup = BeautifulSoup(item_url)
-  link = soup.findAll('div', {'class': 'field-item odd'})
-
