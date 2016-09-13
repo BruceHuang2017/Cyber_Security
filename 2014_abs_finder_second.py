@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib2
-urlf = urllib2.urlopen('https://www.usenix.org/conference/usenixsecurity14/technical-sessions'
-)
+urlf = urllib2.urlopen('https://www.usenix.org/conference/usenixsecurity14/technical-sessions')
 # check by : print page
 soup = BeautifulSoup(urlf.read())
 link = soup.findAll('h2', attrs={'class':'node-title clearfix'})
