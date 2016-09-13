@@ -24,15 +24,15 @@ def absFinder(hurl):
 	return link[testorder].text
 
 def urlsFinder(urlf):
-    urlf = urllib2.urlopen(urlf)
-    soupf = BeautifulSoup(urlf.read())
-    linkf = soupf.findAll('h2', attrs={'class': 'node-title clearfix'})
-    urls = []
-    for n in linkf:
-        url = 'https://www.usenix.org' + str(n.a['href'])
-        urls.append(url)
-    techurl = [l for l in urls if "technical-sessions/presentation" in str(l)]
-    return techurl
+	urlf = urllib2.urlopen(urlf)
+	soupf = BeautifulSoup(urlf.read())
+	linkf = soupf.findAll('h2', attrs={'class': 'node-title clearfix'})
+	urls = []
+	for n in linkf:
+		url = 'https://www.usenix.org' + str(n.a['href'])
+		urls.append(url)
+	techurl = [l for l in urls if "technical-sessions/presentation" in str(l)]
+	return techurl
 
 def titleFinder(furl):
 	furl = urllib2.urlopen(furl)
@@ -54,5 +54,7 @@ url = 'https://www.usenix.org/conference/usenixsecurity14/technical-sessions'
 urls = urlsFinder(url)
 titles = titleFinder(url)
 abss = abssFinder(url)
-print abss
+len(abss)
+len(titles)
+len(urls)
 
