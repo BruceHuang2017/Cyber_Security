@@ -52,9 +52,13 @@ if __name__=="__main__":
 url = 'https://www.usenix.org/conference/usenixsecurity14/technical-sessions'
 #urls, titles as set, abss as dictionary.
 urls = urlsFinder(url)
+#want to get titles only without run abss code, save time. 
 titles = titleFinder(url)
 abss = abssFinder(url)
+#if alrealy has the abss file, run the following code to get titles in a easier way. 
+titles2 = abss.keys()
+
 len(abss)
 len(titles)
 len(urls)
-
+len(titles2)
