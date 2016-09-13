@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib2
 
-
 def abssFinder(furl):
 	furl = urllib2.urlopen(str(furl))
 	fsoup = BeautifulSoup(furl.read())
