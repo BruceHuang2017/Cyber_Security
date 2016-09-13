@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import urllib2
 
 
-def urlFinder(furl):
+def abssFinder(furl):
 	furl = urllib2.urlopen(str(furl))
 	fsoup = BeautifulSoup(furl.read())
 	flink = fsoup.findAll('h2', attrs={'class':'node-title clearfix'})
@@ -52,6 +52,6 @@ if __name__=="__main__":
 url = 'https://www.usenix.org/conference/usenixsecurity14/technical-sessions'
 urls = urlsFinder(url)
 titles = titleFinder(url)
-abss = urlFinder(url)
+abss = abssFinder(url)
 abss
 
