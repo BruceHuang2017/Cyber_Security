@@ -17,10 +17,10 @@ cd / users
 # absulte file name. not related to current location. 
 
 cd -F
-# shows directry. wiht slash '/'.
+# shows directry. with slash '/'.
 
 cat file_name
-# read different text file. 
+# text file reader. 
 
 cat -n file_name
 # -n : n flag ,  with line number and good to do debugge. 
