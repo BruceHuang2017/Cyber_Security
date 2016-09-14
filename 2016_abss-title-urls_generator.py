@@ -48,7 +48,7 @@ def titleFinder(furl):
 if __name__=="__main__":
 
 #input url need to analysis
-url = 'https://www.usenix.org/conference/usenixsecurity14/technical-sessions'
+url = 'https://www.usenix.org/conference/usenixsecurity16/technical-sessions'
 #urls, titles as set, abss as dictionary.
 urls = urlsFinder(url)
 #want to get titles only without run abss code, save time. 
