@@ -56,8 +56,11 @@ titles = titleFinder(url)
 abss = abssFinder(url)
 #if alrealy has the abss file, run the following code to get titles in a easier way. 
 titles2 = abss.keys()
+#find out the abss are not sorted the same order as the website, so resorted it. 
+abss_sorted = [abss[titles[i]] for i in range(len(titles))]
 
 len(abss)
 len(titles)
 len(urls)
 len(titles2)
+len(abss_sorted)
